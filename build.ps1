@@ -246,7 +246,8 @@ $cakeArguments += $ScriptArgs
 # Start Cake
 Write-Host "Running build script..."
 &$CAKE_EXE $cakeArguments
-exit $LASTEXITCODE
 
 write-output 'removing user config file'
 remove-item 'C:\projects\Sitecore.HabitatHome.Platform\Azure\XP\azureuser-config.json' -force
+
+exit $LASTEXITCODE
